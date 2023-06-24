@@ -21,3 +21,37 @@ int main()
    }
     return 0;
 }
+
+
+
+
+
+
+
+//palindrome code
+include <stdio.h>
+
+int main() {
+    int n, result=0,rem,q;
+    printf ("please enter the number: ");
+    scanf("%d",&n);
+    q=n;
+    while (q!=0)
+    {
+        rem =q%10;
+        result=result *10+rem;
+        q=q/10;
+        
+    }
+    if(result==n)
+    printf("it is a palindrome");
+    else
+    printf("No!its not a palindrome");
+
+    return 0;
+}
+
+
+
+
+
