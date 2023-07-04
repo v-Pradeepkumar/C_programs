@@ -103,3 +103,26 @@ else if (y<0)
 printf("the addition of two number is %d",x );
     return 0;
 }
+
+
+
+
+//code for adding two numbers without + operator using half adder
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+int sum,carry,  x , y;
+printf("enter two numbers:");
+scanf("%d, %d",&x , &y);
+
+    while (y!=0)
+    {
+    sum = x^y;
+    carry = (x&y)<<1;
+    x = sum; 
+    y= carry;
+}
+printf("the addition of two number is %d",x );
+    return 0;
+}
