@@ -54,4 +54,19 @@ int main() {
 
 
 
+//code for adding two numbers without + operator
+#include <stdio.h>
 
+int main() {
+    // Write C code here
+int x , y;
+printf("enter two numbers:");
+scanf("%d, %d",&x , &y);
+while (y!= 0)
+{
+    x++;
+    y--;
+}
+printf("the addition of two number is %d",x );
+    return 0;
+}
