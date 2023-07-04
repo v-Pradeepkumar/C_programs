@@ -75,7 +75,7 @@ printf("the addition of two number is %d",x );
 
 
 
-//code for adding two numbers without + operator (half adder method)
+//code for adding two numbers without + operator also for positive and negative numbers
 #include <stdio.h>
 
 int main() {
