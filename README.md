@@ -154,3 +154,33 @@ b = result;
 }
 
 }
+
+
+
+
+
+//print the format of floyd's triangle
+#include <stdio.h>
+
+int main()
+{
+
+int i, j, rows, n=1;
+printf("enter the number of rows:");
+scanf("%d",&rows);
+
+
+for(i=0;i<=rows;i++)
+{
+    for(j=0;j<=i;j++)
+    {
+        printf("%d ",n);
+        n++;
+        
+    }
+    printf("\n");
+}
+return 0 ;
+}
+
+
