@@ -195,3 +195,88 @@ return 0 ;
 }
 
 
+
+
+
+//convert binary to decimal
+#include <stdio.h>
+
+int main()
+{
+int decimal=0,binary ,base=1 ,rem , num;
+printf("enter the binary number:");
+scanf("%d",&binary);
+
+num = binary;
+while(binary!=0)
+{
+    rem = binary % 10;
+    decimal = decimal + rem * base;
+    binary = binary / 10;
+    base = base * 2;
+}
+printf("decimal equivalent of the binary number %d is %d",num, decimal);
+return 0;
+}
+
+
+
+
+
+//decimal eqivalent for the exponential value and positive power numbers
+#include <stdio.h>
+
+int main() {
+    int base ,exponent ,expo ,power = 1;
+    double power1 = 1.0 ;
+    printf("enter the base: ");
+    scanf("%d",& base);
+     printf("enter the exponent: ");
+    scanf("%d",& exponent);
+    
+    expo=exponent;
+    if (exponent > 0)
+    {
+        while (exponent!= 0)
+        {
+            power = power * base ;
+            exponent--;
+        }
+        printf("%d to the power of %d is %d",base , expo, power);
+        
+    }
+    else
+    {
+        while(exponent!= 0)
+        {
+        power1 = power1 * (1.0/base);
+            exponent++;
+        }
+        printf("%d to the power of %d is %.10f ,base , expo , power");
+        }
+
+    return 0;
+}
+
+
+
+
+
+
+// find the year is leap year or not
+#include <stdio.h>
+
+int main() {
+    int year;
+    printf("entter the year:");
+    scanf("%d",&year);
+    if (year % 400 == 0)
+    printf("%d is leap year",year);
+    else  if (year % 100 == 0)
+    printf("%d is not a leap year",year);
+    else if (year % 4 == 0)
+    printf("%d is leap year",year);
+    else
+    printf("%d is not a leap year",year);
+    return 0;
+}
