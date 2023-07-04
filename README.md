@@ -70,3 +70,36 @@ while (y!= 0)
 printf("the addition of two number is %d",x );
     return 0;
 }
+
+
+
+
+
+//code for adding two numbers without + operator (half adder method)
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+int x , y;
+printf("enter two numbers:");
+scanf("%d, %d",&x , &y);
+if (y>0)
+{
+    while (y!=0)
+    {
+    x++;
+    y--;
+        
+    }
+}
+else if (y<0)
+{
+    while (y!=0)
+    {
+    x--;
+    y++;
+}
+}
+printf("the addition of two number is %d",x );
+    return 0;
+}
